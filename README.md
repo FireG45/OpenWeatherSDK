@@ -31,13 +31,7 @@ To configure and use the OpenWeatherSDK in your application, follow these steps:
 ```java
 OpenWeatherSDK weatherSDK = OpenWeatherSDK.factory("your_api_key", OpenWeatherSDKMode.POLLING);
 ```
-3. Retrieve weather information for a specific city using the created OpenWeatherSDK instance. Example:
 
-```java
-String city = "London";
-WeatherInfo weatherInfo = weatherSDK.getWeatherInfo(city);
-System.out.println("Weather in " + city + ": " + weatherInfo.getTemperature() + "C, " + weatherInfo.getWeather().getDescription());
-```
 ## Usage Example
 
 ```java

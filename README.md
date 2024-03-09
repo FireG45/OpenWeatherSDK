@@ -37,7 +37,7 @@ OpenWeatherSDK weatherSDK = OpenWeatherSDK.factory("your_api_key", OpenWeatherSD
 ```java
 // Create an instance of the OpenWeatherSDK
 OpenWeatherSDK weatherSDK = OpenWeatherSDK.factory("your_api_key", OpenWeatherSDKMode.POLLING);
-String city = "London";
+String city = "Kazan'";
 
 // Retrieve weather information for the specified city
 WeatherInfo weatherInfo = weatherSDK.getWeatherInfo(city);

@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c248332b-cc40-47c3-805a-1ef020329433" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/CachedWeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Sys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Temperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/WeatherInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Wind.java" afterDir="false" />
+    <list default="true" id="c248332b-cc40-47c3-805a-1ef020329433" name="Changes" comment="First Version, added basic functionality">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKBadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKTooManyRequestsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKUnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/github/fireg45/mock/HttpResponseMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/CachedWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/CachedWeather.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/WeatherInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/WeatherInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/github/fireg45/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/github/fireg45/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +49,7 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "Application.Run.executor": "Run",
+    "JUnit.Test.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -65,7 +68,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.github.fireg45" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Test">
     <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ru.github.fireg45.App" />
       <module name="OpenWeatherSDK" />
@@ -73,6 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="JUnit" factoryName="JUnit">
+      <module name="OpenWeatherSDK" />
+      <option name="PACKAGE_NAME" value="ru.github.fireg45" />
+      <option name="MAIN_CLASS_NAME" value="ru.github.fireg45.AppTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Run" />
+      <item itemvalue="JUnit.Test" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -90,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709888300327</updated>
-      <workItem from="1709888301653" duration="7543000" />
+      <workItem from="1709888301653" duration="38936000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -100,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709893155245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Version, added basic functionality">
+      <option name="closed" value="true" />
+      <created>1709897917303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709897917303</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="First Version, added basic functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Version, added basic functionality" />
   </component>
 </project>

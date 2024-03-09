@@ -39,4 +39,8 @@ public class WeatherInfo {
 
         return weatherInfo;
     }
+
+    public JSONObject toJSON() {
+        return new JSONObject(this);
+    }
 }

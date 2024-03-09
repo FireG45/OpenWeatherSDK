@@ -6,8 +6,12 @@ import ru.github.fireg45.openweathersdk.dto.WeatherInfo;
 
 
 @Data
-@AllArgsConstructor
 public class CachedWeather {
     private WeatherInfo weatherInfo;
     private long timestampInMillis;
+
+    public CachedWeather(WeatherInfo weatherInfo) {
+        this.weatherInfo = weatherInfo;
+        timestampInMillis = System.currentTimeMillis();
+    }
 }

@@ -18,10 +18,8 @@ import java.util.HashMap;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-
-
 /**
- * The OpenWeatherSDK class acts as a client for interacting with the OpenWeatherMap API.
+ * The OpenWeatherSDK class acts as interface for interacting with the OpenWeatherMap API.
  */
 public class OpenWeatherSDK {
     private final String apiKey;

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c248332b-cc40-47c3-805a-1ef020329433" name="Changes" comment="Pre Final version">
+    <list default="true" id="c248332b-cc40-47c3-805a-1ef020329433" name="Changes" comment="Added Javadocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/CachedWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/CachedWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDKMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDKMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/WeatherInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/WeatherInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     "Application.Run.executor": "Run",
     "JUnit.Test.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.OpenWeatherSDK [deploy].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -103,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709888300327</updated>
-      <workItem from="1709888301653" duration="39813000" />
+      <workItem from="1709888301653" duration="40909000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -129,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709944555891</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Javadocs">
+      <option name="closed" value="true" />
+      <created>1709945440772</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709945440772</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +146,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="First Version, added basic functionality" />
     <MESSAGE value="Pre Final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pre Final version" />
+    <MESSAGE value="Added Javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Javadocs" />
   </component>
 </project>

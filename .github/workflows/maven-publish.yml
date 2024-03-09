@@ -21,6 +21,6 @@ jobs:
           java-version: 21
           
       - name: Publish package
-        run: mvn --batch-mode deploy -Dmaven.test.skip
+        run: mvn --batch-mode deploy -e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -16,9 +16,9 @@ Add the following dependency to your Maven project:
 
 ```xml
 <dependency>
-    <groupId>ru.github.fireg45</groupId>
-    <artifactId>openweathersdk</artifactId>
-    <version>1.0.0</version>
+  <groupId>io.github.fireg45</groupId>
+  <artifactId>open-weather-sdk</artifactId>
+  <version>1.1-SNAPSHOT</version>
 </dependency>
 ```
 ## Configuration

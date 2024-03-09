@@ -26,13 +26,18 @@ Add the following dependency to your Maven project:
 To configure and use the OpenWeatherSDK in your application, follow these steps:
 
 1. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api).
-2. Initialize the OpenWeatherSDK with your API key using the factory method. The factory method ensures a single instance of OpenWeatherSDK for each unique API key, enhancing efficiency in object creation and management. For example:
+2. Initialize the OpenWeatherSDK with your API key using the factory method. The factory method ensures a single instance of OpenWeatherSDK for each unique API key, enhancing efficiency in object creation and management.
 
 ```java
-// Create an instance of OpenWeatherSDK using the factory method
 OpenWeatherSDK weatherSDK = OpenWeatherSDK.factory("your_api_key", OpenWeatherSDKMode.POLLING);
 ```
+3. Retrieve weather information for a specific city using the created OpenWeatherSDK instance. Example:
 
+```java
+String city = "London";
+WeatherInfo weatherInfo = weatherSDK.getWeatherInfo(city);
+System.out.println("Weather in " + city + ": " + weatherInfo.getTemperature() + "C, " + weatherInfo.getWeather().getDescription());
+```
 ## Usage Example
 
 ```java
@@ -45,4 +50,10 @@ WeatherInfo weatherInfo = weatherSDK.getWeatherInfo(city);
 
 // Display the weather details
 System.out.println("Weather in " + city + ": " + weatherInfo.getTemperature() + "C, " + weatherInfo.getWeather().getDescription());
+
+// Get weather information as a JSON object
+JSONObject weatherJson = weatherSDK.getWeatherAsJsonObject(city);
+
+// Display weather information as a JSON object
+System.out.println("Weather in " + city + " as JSON: " + weatherJson.toString());
 ```

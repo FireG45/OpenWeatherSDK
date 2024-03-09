@@ -1,7 +1,7 @@
 /**
  * A data class representing weather information with various properties.
  */
-package ru.github.fireg45.openweathersdk.dto;
+package io.github.fireg45.openweathersdk.dto;
 
 import lombok.Data;
 import org.json.JSONObject;

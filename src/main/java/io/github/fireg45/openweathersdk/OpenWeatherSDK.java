@@ -1,13 +1,13 @@
 /**
  * The OpenWeatherSDK class provides functionality to retrieve weather information from the OpenWeatherMap API.
  */
-package ru.github.fireg45.openweathersdk;
+package io.github.fireg45.openweathersdk;
 
+import io.github.fireg45.openweathersdk.exception.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.json.JSONObject;
-import ru.github.fireg45.openweathersdk.dto.WeatherInfo;
-import ru.github.fireg45.openweathersdk.exception.*;
+import io.github.fireg45.openweathersdk.dto.WeatherInfo;
 
 import java.io.IOException;
 import java.net.URI;

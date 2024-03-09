@@ -1,7 +1,7 @@
 /**
  * An enumeration representing the mode of operation for the OpenWeatherSDK.
  */
-package ru.github.fireg45.openweathersdk;
+package io.github.fireg45.openweathersdk;
 
 /**
  * Enum defining the modes of operation for the OpenWeatherSDK.

@@ -1,4 +1,4 @@
-package ru.github.fireg45.mock;
+package io.github.fireg45.mock;
 
 import javax.net.ssl.SSLSession;
 import java.net.URI;

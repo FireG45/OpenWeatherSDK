@@ -1,7 +1,7 @@
-package ru.github.fireg45.openweathersdk;
+package io.github.fireg45.openweathersdk;
 
 import lombok.Data;
-import ru.github.fireg45.openweathersdk.dto.WeatherInfo;
+import io.github.fireg45.openweathersdk.dto.WeatherInfo;
 
 
 @Data

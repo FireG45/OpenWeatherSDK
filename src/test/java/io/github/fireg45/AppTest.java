@@ -1,12 +1,12 @@
-package ru.github.fireg45;
+package io.github.fireg45;
 
+import io.github.fireg45.mock.HttpResponseMock;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import ru.github.fireg45.mock.HttpResponseMock;
-import ru.github.fireg45.openweathersdk.OpenWeatherSDK;
-import ru.github.fireg45.openweathersdk.OpenWeatherSDKMode;
-import ru.github.fireg45.openweathersdk.dto.WeatherInfo;
+import io.github.fireg45.openweathersdk.OpenWeatherSDK;
+import io.github.fireg45.openweathersdk.OpenWeatherSDKMode;
+import io.github.fireg45.openweathersdk.dto.WeatherInfo;
 
 import java.io.IOException;
 import java.net.URI;

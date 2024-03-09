@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c248332b-cc40-47c3-805a-1ef020329433" name="Changes" comment="Changed pom.xml for uploading to maven repo">
+    <list default="true" id="c248332b-cc40-47c3-805a-1ef020329433" name="Changes" comment="Minor fix">
+      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/CachedWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/CachedWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/OpenWeatherSDK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/OpenWeatherSDKMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/OpenWeatherSDKMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Sys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/dto/Sys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/dto/Temperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/dto/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/WeatherInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/dto/WeatherInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/dto/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/dto/Wind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKBadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/exception/OpenWeatherSDKBadRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/exception/OpenWeatherSDKNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/exception/OpenWeatherSDKServerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKTooManyRequestsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/exception/OpenWeatherSDKTooManyRequestsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/github/fireg45/openweathersdk/exception/OpenWeatherSDKUnauthorizedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/fireg45/openweathersdk/exception/OpenWeatherSDKUnauthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/github/fireg45/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/fireg45/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/github/fireg45/mock/HttpResponseMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/fireg45/mock/HttpResponseMock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +40,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -62,28 +82,17 @@
       <recent name="ru.github.fireg45" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test">
-    <configuration name="Run" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ru.github.fireg45.App" />
-      <module name="OpenWeatherSDK" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Test" type="JUnit" factoryName="JUnit">
       <module name="OpenWeatherSDK" />
-      <option name="PACKAGE_NAME" value="ru.github.fireg45" />
-      <option name="MAIN_CLASS_NAME" value="ru.github.fireg45.AppTest" />
+      <option name="PACKAGE_NAME" value="io.github.fireg45" />
+      <option name="MAIN_CLASS_NAME" value="io.github.fireg45.AppTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Run" />
-      <item itemvalue="JUnit.Test" />
-    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -102,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709888300327</updated>
       <workItem from="1709888301653" duration="40909000" />
-      <workItem from="1709978312456" duration="1391000" />
+      <workItem from="1709978312456" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -144,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709978683701</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Minor fix">
+      <option name="closed" value="true" />
+      <created>1709979900998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709979900998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +173,7 @@
     <MESSAGE value="Pre Final version" />
     <MESSAGE value="Added Javadocs" />
     <MESSAGE value="Changed pom.xml for uploading to maven repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed pom.xml for uploading to maven repo" />
+    <MESSAGE value="Minor fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fix" />
   </component>
 </project>

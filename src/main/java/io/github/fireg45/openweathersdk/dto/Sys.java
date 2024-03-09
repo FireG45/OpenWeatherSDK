@@ -1,4 +1,4 @@
-package ru.github.fireg45.openweathersdk.dto;
+package io.github.fireg45.openweathersdk.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

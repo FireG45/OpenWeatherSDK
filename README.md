@@ -7,6 +7,7 @@ OpenWeatherSDK is a Java library designed to interact with the OpenWeatherMap AP
 ## Contents
 
 - [Installation](#installation)
+- [Configuration](#configuration)
 - [Usage Example](#usage-example)
 
 ## Installation
@@ -20,7 +21,17 @@ Add the following dependency to your Maven project:
     <version>1.0.0</version>
 </dependency>
 ```
+## Configuration
 
+To configure and use the OpenWeatherSDK in your application, follow these steps:
+
+1. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api).
+2. Initialize the OpenWeatherSDK with your API key using the factory method. The factory method ensures a single instance of OpenWeatherSDK for each unique API key, enhancing efficiency in object creation and management. For example:
+
+```java
+// Create an instance of OpenWeatherSDK using the factory method
+OpenWeatherSDK weatherSDK = OpenWeatherSDK.factory("your_api_key", OpenWeatherSDKMode.POLLING);
+```
 
 ## Usage Example
 

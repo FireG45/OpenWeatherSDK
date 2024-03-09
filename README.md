@@ -3,6 +3,7 @@
 ## Introduction
 
 OpenWeatherSDK is a Java library designed to interact with the OpenWeatherMap API for retrieving weather information. This library simplifies the process of fetching current weather data for specific cities, offering support for both on-demand and polling modes. It includes data classes to represent various weather attributes and implements caching mechanisms for efficient data management.
+This page describes the most basic configuration, for more follow [Documentation](https://github.com/FireG45/OpenWeatherSDK/wiki/Documentation)
 
 ## Contents
 

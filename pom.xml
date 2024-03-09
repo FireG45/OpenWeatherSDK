@@ -4,7 +4,7 @@
 
     <groupId>io.github.fireg45</groupId>
     <artifactId>OpenWeatherSDK</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>OpenWeatherSDK</name>
@@ -24,12 +24,6 @@
             <email>cace.200218@gmail.com</email>
         </developer>
     </developers>
-
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>21</maven.compiler.source>
-    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
@@ -64,23 +58,10 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>21</source>
-                    <target>21</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/FireG45/OpenWeatherSDK</url>
+            <url>https://maven.pkg.github.com/fireg45/OpenWeatherSDK</url>
         </repository>
     </distributionManagement>
 

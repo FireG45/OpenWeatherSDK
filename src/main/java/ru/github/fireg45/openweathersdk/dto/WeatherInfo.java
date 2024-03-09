@@ -1,8 +1,14 @@
+/**
+ * A data class representing weather information with various properties.
+ */
 package ru.github.fireg45.openweathersdk.dto;
 
 import lombok.Data;
 import org.json.JSONObject;
 
+/**
+ * Data class representing weather information including weather conditions, temperature, wind, etc.
+ */
 @Data
 public class WeatherInfo {
     private Weather weather;
@@ -14,6 +20,12 @@ public class WeatherInfo {
     private int timezone;
     private String name;
 
+    /**
+     * Constructs a WeatherInfo object from a JSON string representing weather data.
+     *
+     * @param body The JSON string containing weather data.
+     * @return WeatherInfo object initialized with parsed data from the JSON string.
+     */
     public static WeatherInfo fromJson(String body) {
         JSONObject jsonObject = new JSONObject(body);
         WeatherInfo weatherInfo = new WeatherInfo();
@@ -40,6 +52,11 @@ public class WeatherInfo {
         return weatherInfo;
     }
 
+    /**
+     * Converts this WeatherInfo object into a JSONObject.
+     *
+     * @return JSONObject representation of this WeatherInfo object.
+     */
     public JSONObject toJSON() {
         return new JSONObject(this);
     }

@@ -4,7 +4,7 @@
 
     <groupId>io.github.fireg45</groupId>
     <artifactId>OpenWeatherSDK</artifactId>
-    <version>1.1.0.1-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>OpenWeatherSDK</name>
@@ -24,6 +24,11 @@
             <email>cace.200218@gmail.com</email>
         </developer>
     </developers>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->

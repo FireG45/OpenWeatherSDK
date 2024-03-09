@@ -51,3 +51,29 @@ JSONObject weatherJson = weatherSDK.getWeatherAsJsonObject(city);
 // Display weather information as a JSON object
 System.out.println("Weather in " + city + " as JSON: " + weatherJson.toString());
 ```
+
+The JSON object representing weather information can be formatted as follows:
+
+```json
+{
+  "weather": {
+    "main": "Clouds",
+    "description": "overcast clouds"
+  },
+  "datetime": 1709905202,
+  "visibility": 1875,
+  "temperature": {
+    "temp": 269.1,
+    "feels_like": 265.08
+  },
+  "sys": {
+    "sunrise": 1709867797,
+    "sunset": 1709908329
+  },
+  "wind": {
+    "speed": 2
+  },
+  "timezone": 10800,
+  "name": "Kazan’"
+}
+```

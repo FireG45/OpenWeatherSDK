@@ -23,4 +23,4 @@ jobs:
       - name: Publish package
         run: mvn --batch-mode deploy -Dmaven.test.skip
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
